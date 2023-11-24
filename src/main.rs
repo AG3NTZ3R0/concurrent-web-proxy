@@ -14,8 +14,7 @@ fn main() {
     // Create a thread pool with 4 threads.
     let pool = ThreadPool::build(4).unwrap();
 
-    // Accept incoming connections, but only take the first 2.
-    for stream in listener.incoming().take(2) {
+    for stream in listener.incoming() {
         let stream = stream.unwrap();
 
         // For each connection, spawn a job in the thread pool to handle it.
