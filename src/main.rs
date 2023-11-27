@@ -9,7 +9,7 @@ use std::time::Duration;
 
 /// Entry point of the application.
 ///
-/// This function sets up a TCP listener on the local host at the specified port,
+/// The function sets up a TCP listener on the local host at the specified port,
 /// creates a thread pool with 4 threads, and then enters a loop where it
 /// accepts incoming connections and handles them in separate threads.
 ///
@@ -56,7 +56,7 @@ fn main() {
 
 /// Handle a single connection from a client.
 ///
-/// This function reads the request from the client, forwards it to the backend server,
+/// The function reads the request from the client, forwards it to the backend server,
 /// reads the response from the backend server, and then writes the response back to the client.
 ///
 /// # Arguments
